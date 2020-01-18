@@ -14,3 +14,11 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+const binIcons = document.querySelector("#fa fa-trash");
+
+binIcons.forEach((icon) => {
+  icon.addEventListener("click", (event) => {
+    alert("Attention! You are deleting this task!");
+  });
+});
